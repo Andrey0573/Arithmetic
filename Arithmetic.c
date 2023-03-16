@@ -7,13 +7,16 @@ function_1 Addition
 function_2 Subtraction
 function_3 Multiplication
 function_4 Division
-function_5 >
-function_6 <
+function_5 > More than
+function_6 < Less than
 */
 
 #define max(x, y) (((x) > (y)) ? (x) : (y))
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
+int a, b, c, num1, num2, operation, result, maxnum = 11;
+
+int Addition(int, int);
 int Subtraction(int, int);
 
 int main()
@@ -24,16 +27,19 @@ int main()
 	srand((unsigned) time(&t));
     while (1) 
     {
-        int a, b, c, num1, num2, maxnum = 16;
-		   
         num1 = rand() % maxnum;
         num2 = rand() % maxnum;
-
-        a = max(num1,num2);
-        b = min(num1,num2);
-        c = Subtraction(a, b);
+        operation = (rand() % 2) + 1;
+        if ( operation == 1)
+        {
+            result = Addition(num1, num2);
+        }
+        else
+        {
+            result = Subtraction(num1, num2);
+        }
         system("clear");
-        if ( c == 1 )
+        if ( result == 1 )
 	    {
             printf("\n \033[32;1m OK !!! \033[0m \n\n\n");
         }
@@ -42,21 +48,32 @@ int main()
             printf("\n \033[31;1m ERROR !!! :\(  \033[0m \n\n\n");
         }
     }
+    
     return(0);
 }
 
-int Subtraction(int a, int b) 
+int Addition(int a, int b)
 {   
-    int result;
-    printf("\n \033[0;1m %d - %d = ? \033[0m \n\n", a, b);
-    scanf("%2d", &result0);
-    if ( result == a - b )
+    printf("\n \033[0;1m %d + %d = ? \033[0m \n\n", a, b);
+    scanf("%2d", &c);
+    if ( c == a + b )
     {
         return(1);
     }
-    else
+
+    return(0);    
+}
+
+int Subtraction(int num1, int num2) 
+{   
+    a = max(num1,num2);
+    b = min(num1,num2);
+    printf("\n \033[0;1m %d - %d = ? \033[0m \n\n", a, b);
+    scanf("%2d", &c);
+    if ( c == a - b )
     {
-        return(2);
+        return(1);
     }
-    
+
+    return(0);    
 }
