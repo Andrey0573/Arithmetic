@@ -18,36 +18,36 @@ b = rand() % 11;
    if (  a >= b )
 	{	  
 //	printf("\n a - b = c \n");
-	printf("\n %d - %d = ?\n\n", a, b);
+	printf("\n \033[0;1m %d - %d = ? \033[0m \n\n", a, b);
 	scanf("%2d", &d);
 	   if ( d==a-b )
 	    {
 	    system("clear");
 //	    printf("\n OK! \n\n\n");
-	    printf("\n \033[32;1m OK !!! \033[0;1m \n\n\n");
+	    printf("\n \033[32;1m OK !!! \033[0m \n\n\n");
 	    }
 	   else
 	      {
 	      system("clear");
 //	      printf("\n ERROR! \n\n\n",   );
-	      printf("\n \033[31;1m ERROR!!! :\(  \033[0;1m \n\n\n");
+	      printf("\n \033[31;1m ERROR !!! :\(  \033[0m \n\n\n");
 	      }
 	}
 
    else 
 	{
 //	printf("\n b - a = c \n");
- 	printf("\n %d - %d = ? \n\n", b, a);
+ 	printf("\n \033[0;1m %d - %d = ? \033[0m \n\n", b, a);
 	scanf("%2d", &d);
 	   if ( d==b-a )
 	    {	
 	    system("clear");
-	    printf("\n \033[32;1m OK !!! \033[0;1m \n\n\n");
+	    printf("\n \033[32;1m OK !!! \033[0m \n\n\n");
 	    }
 	   else
 	      {
 	      system("clear");
-	      printf("\n \033[31;1m ERROR!!! :\(  \033[0;1m \n\n\n");
+	      printf("\n \033[31;1m ERROR !!! :\(  \033[0m \n\n\n");
 	      }
 
         }	
