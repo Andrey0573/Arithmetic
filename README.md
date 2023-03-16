@@ -3,6 +3,7 @@ Only Subtraction yet.
 Compiled for Linux x64
 
 
+
 Todo: 
 
 Control input from user (digits only!!!)
