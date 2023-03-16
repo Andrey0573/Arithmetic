@@ -42,12 +42,12 @@ b = rand() % 11;
 	   if ( d==b-a )
 	    {	
 	    system("clear");
-	    printf("\n OK! \n\n\n");
+	    printf("\n \033[32;1m OK !!! :\) \033[0;1m\n\n\n");
 	    }
 	   else
 	      {
 	      system("clear");
-	      printf("\n ERROR! \n\n\n");
+	      printf("\n \033[31;1m ERROR!!! :\(  \033[0;1m\n\n\n");
 	      }
 
         }	
