@@ -10,6 +10,7 @@ Choice of numbers  (Up to 10, Up to 50, Up to 100 ...)
 
 Addition - Slozenie
 // Subtraction - Vichitanie
-Multiplication - Umnozenie    
+Multiplication - Umnozenie
 Division - Delenie
+
  
