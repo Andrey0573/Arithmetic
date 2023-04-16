@@ -6,7 +6,7 @@ Compiled for Linux x64
 
 Todo: 
 
-Control input from user (digits only!!!)
+Control input from user (digits only!!!)   (  scanf("%[0-9]", str);  )
 
 Counter of questions and true answers, display before exit
 
