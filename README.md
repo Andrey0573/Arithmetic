@@ -10,7 +10,7 @@ Control input from user (digits only!!!)   (  scanf("%[0-9]", str);  )
 
 Counter of questions and true answers, display before exit
 
-Choice of numbers  (Up to 10, Up to 50, Up to 100  ...)
+Choice of numbers  (Up to 10, Up to 50, Up to 100  444...)
 
 // Addition - Slozenie
 
