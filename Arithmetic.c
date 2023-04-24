@@ -92,12 +92,12 @@ int counters()
     {
         // count_true = 0; 
         // count_false = 0;
-        printf("\033[\n\n\n 0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
+        printf("\n\n\n \033[0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
         printf("\033[0;1m \n\n Restart \033[0m \n");
         //return(0);
         sleep(30);
         exit(0);
     }
-    printf("\033[0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
+    printf("\n\n \033[0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
     return(0);    
 }
