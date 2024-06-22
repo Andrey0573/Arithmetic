@@ -101,3 +101,4 @@ int counters()
     printf("\n\n \033[0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
     return(0);    
 }
+
