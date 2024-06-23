@@ -14,13 +14,16 @@ function_6 < Less than
 #define max(x, y) (((x) > (y)) ? (x) : (y))
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
-int a, b, c, num1, num2, operation, result, maxnum = 11;
+int a, b, c, num1, num2, operation, result, maxnum = 51;
 __uint8_t count_true = 0, count_false = 0, count_total = 0;
 time_t t;
+time_t unix_time;
+char date_time[20];
 
 int Addition(int, int);
 int Subtraction(int, int);
 int counters();
+void write_log();
 
 int main()
 {
@@ -28,7 +31,7 @@ int main()
 /* //    time_t t;	*/
 	/* Intializes random number generator */
 	srand((unsigned) time(&t));
-    counters();    
+    counters(); 
     while (1) 
     {
         num1 = rand() % maxnum;
@@ -56,7 +59,7 @@ int main()
             printf("\n \033[31;1m :(   ERROR !!! \033[0m \n\n\n");
         }
     }
-    
+ 
     return(0);
 }
 
@@ -88,6 +91,7 @@ int Subtraction(int num1, int num2)
 
 int counters() 
 {
+    write_log();
     if ( count_true + count_false == 100)
     {
         // count_true = 0; 
@@ -100,5 +104,16 @@ int counters()
     }
     printf("\n\n \033[0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
     return(0);    
+}
+
+void write_log() 
+{
+	time (&unix_time);
+	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime(&unix_time));  
+
+    FILE * fp;
+    fp = fopen ("arithmetic.log", "a");
+    fprintf(fp, "%s   Total: %d   True: %d   False: %d \n", date_time, count_true + count_false, count_true, count_false);
+    fclose(fp);
 }
 

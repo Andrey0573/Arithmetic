@@ -4,19 +4,19 @@
 time_t unix_time;
 char date_time[20];
 
-void date_time4log()	{
+void date_time4log()	
+{
 //	time_t unix_time;
 //    	char* time_string;
 	/* Obtain current time. */
 //	unix_time = time(NULL);
 	time (&unix_time);
-	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime(&unix_time));  
-
+	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime(&unix_time));
 }
 
-int main () {
-
-date_time4log();
+int main () 
+{
+   date_time4log();
 
    FILE * fp;
    fp = fopen ("logfile.log", "a");
@@ -26,5 +26,4 @@ date_time4log();
 //   printf(" %s The current date is\n", date_time);
  
    return(0);
-
 }
