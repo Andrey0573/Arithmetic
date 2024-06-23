@@ -1,10 +1,8 @@
 #include <stdio.h>      /*  // printf(), scanf()  */
-#include <stdlib.h>     /*  // rand(), srand()    */
 #include <time.h>       /*  // time()             */
 
 time_t unix_time;
 char date_time[20];
-
 
 void date_time4log()	{
 //	time_t unix_time;
@@ -12,8 +10,8 @@ void date_time4log()	{
 	/* Obtain current time. */
 //	unix_time = time(NULL);
 	time (&unix_time);
-	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime(&unix_time)); 
-        
+	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime(&unix_time));  
+
 }
 
 int main () {
@@ -30,5 +28,3 @@ date_time4log();
    return(0);
 
 }
-
-
