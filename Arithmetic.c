@@ -15,8 +15,15 @@ function_6 < Less than
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
 unsigned char trash;
-unsigned int  c ;
-unsigned int a, b, x,  num1, num2, operation, result, maxnum = 51;
+unsigned int a;
+unsigned int b;
+unsigned int c;
+unsigned int x;  
+unsigned int num1; 
+unsigned int num2;
+unsigned int operation; 
+unsigned int result; 
+unsigned int maxnum = 51;
 __uint8_t count_true = 0, count_false = 0, count_total = 0;
 time_t t;
 time_t unix_time;
