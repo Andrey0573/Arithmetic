@@ -1,6 +1,6 @@
-#include <stdio.h>	/*  // printf(), scanf()  */
-#include <stdlib.h>	/*  // rand(), srand()    */
-#include <time.h>	/*  // time()             */
+#include <stdio.h>	/*   printf(), scanf()  */
+#include <stdlib.h>	/*   rand(), srand()    */
+#include <time.h>	/*   time()             */
 
 /*
 function_1 Addition 
@@ -14,7 +14,9 @@ function_6 < Less than
 #define max(x, y) (((x) > (y)) ? (x) : (y))
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
-int a, b, c, num1, num2, operation, result, maxnum = 51;
+unsigned char trash;
+unsigned int  c ;
+unsigned int a, b, x,  num1, num2, operation, result, maxnum = 51;
 __uint8_t count_true = 0, count_false = 0, count_total = 0;
 time_t t;
 time_t unix_time;
@@ -28,7 +30,7 @@ void write_log();
 int main()
 {
     system("clear");
-/* //    time_t t;	*/
+/*     time_t t;	*/
 	/* Intializes random number generator */
 	srand((unsigned) time(&t));
     counters(); 
@@ -66,9 +68,16 @@ int main()
 int Addition(int a, int b)
 {   
     printf("\n \033[0;1m %d + %d = ? \033[0m \n\n", a, b);
-    scanf("%2d", &c);
+    scanf("%2d", &x);
+//    if (x > 102 || x < 0) { x = 102; } 
+    c = x;
+    printf("\n x= %d ------------ c = %d  \n\n", x, c); 
+//    printf("\n c = %d  \n\n", c);
+    scanf("%c", &trash);
+    printf("\n trash = %c  \n\n", trash);
+    sleep(3); 
     if ( c == a + b )
-    {
+    { 
         return(1);
     }
 
