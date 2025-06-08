@@ -21,7 +21,7 @@ int c;
 int x;  
 int num1; 
 int num2;
-int operation; s
+int operation;
 int result; 
 int maxnum = 51;
 __uint8_t count_true = 0; 
