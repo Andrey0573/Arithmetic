@@ -1,6 +1,6 @@
-#include <stdio.h>	/*  // printf(), scanf()  */
-#include <stdlib.h>	/*  // rand(), srand()    */
-#include <time.h>	/*  // time()             */
+#include <stdio.h>	/*   printf(), scanf()  */
+#include <stdlib.h>	/*   rand(), srand()    */
+#include <time.h>	/*   time()             */
 
 /*
 function_1 Addition 
