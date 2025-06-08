@@ -127,6 +127,11 @@ void write_log()
 
     FILE * fp;
     fp = fopen ("arithmetic.log", "a");
+    if(fp==NULL)
+    {
+        perror("Error occured while opening arithmetic.log \n");
+        return 1;
+    }
     fprintf(fp, "%s   Total: %d   True: %d   False: %d \n", date_time, count_true + count_false, count_true, count_false);
     fclose(fp);
 }
