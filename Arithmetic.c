@@ -21,7 +21,7 @@ int c;
 int x;  
 int num1; 
 int num2;
-int operation; 
+int operation; s
 int result; 
 int maxnum = 51;
 __uint8_t count_true = 0; 
@@ -34,7 +34,7 @@ char date_time[20];
 int Addition(int, int);
 int Subtraction(int, int);
 int counters();
-void write_log();
+int write_log();
 
 int main()
 {
@@ -120,7 +120,7 @@ int counters()
     return 0;    
 }
 
-void write_log() 
+int write_log() 
 {
 	time (&unix_time);
 	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime(&unix_time));  
@@ -134,5 +134,6 @@ void write_log()
     }
     fprintf(fp, "%s   Total: %d   True: %d   False: %d \n", date_time, count_true + count_false, count_true, count_false);
     fclose(fp);
+    return 0;
 }
 
