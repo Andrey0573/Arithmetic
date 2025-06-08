@@ -78,10 +78,8 @@ int Addition(int a, int b)
 {   
     printf("\n \033[0;1m %d + %d = ? \033[0m \n\n", a, b);
     scanf("%2d", &x);
-/*  temporary comment  if (x > 102 || x < 0) { x = 102; } */
     c = x;
     printf("\n x= %d ------------ c = %d  \n\n", x, c); 
-/*  temporary comment  printf("\n c = %d  \n\n", c);  */
     scanf("%c", &trash);
     printf("\n trash = %c  \n\n", trash);
     sleep(3); 
@@ -112,8 +110,6 @@ int counters()
     write_log();
     if ( count_true + count_false == 100)
     {
-        /* count_true = 0; 
-         count_false = 0;  */
         printf("\n\n\n \033[0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
         printf("\033[0;1m \n\n Restart \033[0m \n");
         /* temporary comment return(0);  */
