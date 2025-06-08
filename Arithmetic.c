@@ -123,7 +123,8 @@ int counters()
 int write_log() 
 {
 	time (&unix_time);
-	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime(&unix_time));  
+    struct tm resultt;
+	strftime(date_time, 20, "%Y-%m-%d %H:%M:%S", localtime_r(&unix_time, &resultt));  
 
     FILE * fp;
     fp = fopen ("arithmetic.log", "a");
