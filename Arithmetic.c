@@ -74,16 +74,16 @@ int main()
 /*  temporary comment  return(0);  */
 }
 
-int Addition(int a, int b)
+int Addition(int d, int e)
 {   
-    printf("\n \033[0;1m %d + %d = ? \033[0m \n\n", a, b);
+    printf("\n \033[0;1m %d + %d = ? \033[0m \n\n", d, e);
     scanf("%2d", &x);
     c = x;
     printf("\n x= %d ------------ c = %d  \n\n", x, c); 
     scanf("%c", &trash);
     printf("\n trash = %c  \n\n", trash);
     sleep(3); 
-    if ( c == a + b )
+    if ( c == d + e )
     { 
         return 1;
     }
@@ -91,10 +91,10 @@ int Addition(int a, int b)
     return 0;    
 }
 
-int Subtraction(int num1, int num2) 
+int Subtraction(int f, int g) 
 {   
-    a = max(num1,num2);
-    b = min(num1,num2);
+    a = max(f,g);
+    b = min(f,g);
     printf("\n \033[0;1m %d - %d = ? \033[0m \n\n", a, b);
     scanf("%2d", &c);
     if ( c == a - b )
