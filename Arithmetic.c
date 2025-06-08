@@ -131,7 +131,7 @@ int write_log()
     if(fp==NULL)
     {
         perror("Error occured while opening arithmetic.log \n");
-        return 1;
+      /*  return 1;  */
         exit (1);
     }
     fprintf(fp, "%s   Total: %d   True: %d   False: %d \n", date_time, count_true + count_false, count_true, count_false);
