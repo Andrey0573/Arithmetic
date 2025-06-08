@@ -30,7 +30,7 @@ void write_log();
 int main()
 {
     system("clear");
-/*     time_t t;	*/
+/*  temporary comment    time_t t;	*/
 	/* Intializes random number generator */
 	srand((unsigned) time(&t));
     counters(); 
@@ -62,17 +62,17 @@ int main()
         }
     }
  
-//    return(0);
+//   temporary comment  return(0);
 }
 
 int Addition(int a, int b)
 {   
     printf("\n \033[0;1m %d + %d = ? \033[0m \n\n", a, b);
     scanf("%2d", &x);
-//    if (x > 102 || x < 0) { x = 102; } 
+//  temporary comment  if (x > 102 || x < 0) { x = 102; } 
     c = x;
     printf("\n x= %d ------------ c = %d  \n\n", x, c); 
-//    printf("\n c = %d  \n\n", c);
+//  temporary comment  printf("\n c = %d  \n\n", c);
     scanf("%c", &trash);
     printf("\n trash = %c  \n\n", trash);
     sleep(3); 
