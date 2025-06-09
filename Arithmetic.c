@@ -77,12 +77,8 @@ int main()
 int Addition(int d, int e)
 {   
     printf("\n \033[0;1m %d + %d = ? \033[0m \n\n", d, e);
-    scanf("%2d", &x);
-    c = x;
-    printf("\n x= %d ------------ c = %d  \n\n", x, c); 
+    scanf("%2d", &c);
     scanf("%c", &trash);
-    printf("\n trash = %c  \n\n", trash);
-    sleep(3); 
     if ( c == d + e )
     { 
         return 1;
@@ -97,6 +93,7 @@ int Subtraction(int f, int g)
     b = min(f,g);
     printf("\n \033[0;1m %d - %d = ? \033[0m \n\n", a, b);
     scanf("%2d", &c);
+    scanf("%c", &trash);
     if ( c == a - b )
     {
         return 1;
@@ -112,7 +109,6 @@ int counters()
     {
         printf("\n\n\n \033[0;1m Total: %d   \033[32;1m True: %d   \033[31;1m False: %d \033[0m \n", count_true + count_false, count_true, count_false);   
         printf("\033[0;1m \n\n Restart \033[0m \n");
-        /* temporary comment return(0);  */
         sleep(30);
         exit(0);
     }
@@ -137,4 +133,3 @@ int write_log()
     fclose(fp);
     return 0;
 }
-
